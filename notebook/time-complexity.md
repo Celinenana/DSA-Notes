@@ -42,24 +42,22 @@ O(2ⁿ)       → 🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹�
 
 示例代码 | Example Code
 1️⃣ O(1) - 常数时间 | Constant Time
-python
-Copy
-Edit
+
+```python
 def get_first_element(arr):
     return arr[0]  # 访问数组首元素，时间复杂度 O(1)
+```
+
 2️⃣ O(n) - 线性时间 | Linear Time
-python
-Copy
-Edit
+```python
 def find_element(arr, target):
     for num in arr:
         if num == target:
             return True  # 遍历数组查找目标，O(n)
     return False
+```
 3️⃣ O(log n) - 对数时间 | Logarithmic Time
-python
-Copy
-Edit
+```python
 def binary_search(arr, target):
     left, right = 0, len(arr) - 1
     while left <= right:
@@ -71,20 +69,18 @@ def binary_search(arr, target):
         else:
             right = mid - 1
     return -1  # 二分查找，O(log n)
+``` 
 4️⃣ O(n²) - 平方时间 | Quadratic Time
-python
-Copy
-Edit
+```python
 def bubble_sort(arr):
     n = len(arr)
     for i in range(n):
         for j in range(0, n-i-1):
             if arr[j] > arr[j+1]:
                 arr[j], arr[j+1] = arr[j+1], arr[j]  # 冒泡排序，O(n²)
+```
 5️⃣ O(2ⁿ) - 指数时间 | Exponential Time
-python
-Copy
-Edit
+```python
 def fibonacci(n):
     if n <= 1:
         return n
